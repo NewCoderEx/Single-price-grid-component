@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 200px 360px;
+}
+
+.main-card {
+  background-color: #fff;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 20px 70px 30px 40px;
+  border-radius: 8px 8px 0 0;
+}
+
+.main-card h2 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 25px;
+}
+
+.main-card h3 {
+  color: hsl(71, 73%, 54%);
+}
+
+.main-card p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.5rem;
+}
+
+.left-card {
+  background-color: hsl(179, 62%, 43%);
+  padding: 30px 30px 20px 40px;
+  border-radius: 0 0 0 8px;
+  color: hsl(0, 0%, 100%, 0.8);
+}
+
+.left-card h3 {
+  font-size: 20px;
+}
+
+.left-card p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.price h1 {
+  display: inline;
+}
+
+.price p {
+  display: inline;
+  color: hsl(0, 0%, 100%, 0.5);
+  margin-left: 10px;
+}
+
+.right-card {
+  background-color: hsl(179, 62%, 43%, 0.7);
+  padding: 20px 60px 20px 50px;
+  border-radius: 0 0 8px 0;
+  color: hsl(0, 0%, 100%, 0.6);
+  line-height: 1.6rem;
+}
+
+.right-card h3 {
+  font-size: 20px;
+}
+
+.btn {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  background-color: hsl(71, 73%, 54%);
+  color: #fff;
+  border: none;
+  padding: 22px 110px;
+  margin: 15px auto 0;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: hsl(70, 60%, 40%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 890px) {
+  #cards {
+    display: block;
+    margin: 50px 25px;
+  }
+
+  .main-card {
+    border-radius: 5px 5px 0 0;
+    padding: 10px 25px 20px 25px;
+  }
+
+  .main-card h3 {
+    font-size: 16px;
+  }
+
+  .main-card p {
+    font-size: 14px;
+    line-height: 1.7rem;
+  }
+
+  .left-card {
+    border-radius: 0;
+    padding: 10px 25px 20px 25px;
+  }
+
+  .left-card p {
+    font-size: 15px;  
+  }
+
+  .btn {
+    padding: 15px 100px;
+  }
+
+  .right-card {
+    border-radius: 0 0 5px 5px;
+    padding: 10px 25px 20px 25px;
+  }
+}
